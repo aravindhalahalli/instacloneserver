@@ -36,6 +36,6 @@ app.get('/', function (req, res) {   res.sendFile(path.join(__dirname, 'build', 
 
 
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT ,()=>{
     console.log("server is running on", PORT);
 })
